@@ -6,5 +6,6 @@ describe('Cy Visit', function() {
       cy.get('[data-cy="cy-email-input-field-header"]').type('testingpurpose221@gmail.com')
       cy.get('[data-cy="cy-password-input-filed-header"]').type('Test1234')
       cy.get('[data-cy="cy-login-btn-header"]').click()
+      cy.get('[data-cy="cy-login-btn-header"]').should('not.exist')
     })
   });
