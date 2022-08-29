@@ -5,5 +5,6 @@ describe('Cy Visit', function() {
       cy.visit('https://test.bitstarz.com/')
       cy.get('[data-cy="cy-email-input-field-header"]').type('aaa@aa.aa')
       cy.get('[data-cy="cy-login-btn-header"]', {timeout:2000}).click()
+      cy.get('.form-top-errors > span').should('be.visible')
     })
   });
