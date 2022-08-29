@@ -29,6 +29,7 @@ describe('Cy Visit', function() {
       cy.get('[data-cy="cy-close-modal-btn"] > .c-modal-overlay-close__icon > use').click()
       cy.get('[data-cy="cy-skip-button"]').click()
       cy.get('[data-cy="cy-shared-continue-button"]').click()
+      cy.get('[data-cy="cy-login-btn-header"]').should('not.exist')
       cy.get(':nth-child(1) > .navbar__nav-link').trigger('mouseover')
       cy.get('a').contains('My Account').click()
       cy.get('.bs-c-account-menu-list > :nth-child(4)').click()
