@@ -43,15 +43,6 @@ describe('Cy Visit', function() {
       cy.get('#postal_code').type(postal)
       cy.get('#address').type(address)
       cy.get('.bs-c-account-profile-info__form > .bs-c-button-wrapper > .bs-c-button').click()
-      
-
-
-
-      
-      
-      
-
-
     })
   })
 
