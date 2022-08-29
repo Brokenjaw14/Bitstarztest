@@ -4,7 +4,7 @@ import {faker} from '@faker-js/faker';
 const email =faker.internet.email();
 const password =faker.internet.password();
 const username =faker.internet.userName();
-
+const timestamp = new Date().getTime(); //1642080371822
 
 describe('Cy Visit', function() {
     it('test visit method', function() {
